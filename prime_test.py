@@ -1,6 +1,5 @@
 import re
 from sympy import primerange
-from prime import primes
 
 
 def test_prime():
