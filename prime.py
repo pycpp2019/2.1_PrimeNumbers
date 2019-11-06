@@ -7,7 +7,7 @@ file = open('prime.txt', 'w')
 arr = np.zeros(N)
 lim = N**0.5
 
-j = 2
+j = 3
 while (j <= lim):
     i = 2
     while (j*i < len(arr)):
