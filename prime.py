@@ -18,3 +18,4 @@ while (j <= lim):
 for i in range(1,N):
     if (arr[i] == 0):
        file.write(str(i)+' ')
+file.close()
