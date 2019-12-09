@@ -13,7 +13,7 @@ def func(n):
         else:
             lst.append(i)
     return lst
-my_lst = func(100)
+my_lst = func(10000000)
 my_string = ', '.join(str(e) for e in my_lst)
 f = open('prime.txt', 'w')
 f.write(my_string)
