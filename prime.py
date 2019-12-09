@@ -1,6 +1,6 @@
 from math import sqrt
 def func(n):
-    lst = []
+    lst = [2]
     for i in range(3, n+1, 2):
         if (i > 10) and (i%10 == 5):
             continue
@@ -14,7 +14,7 @@ def func(n):
             lst.append(i)
     return lst
 my_lst = func(100)
-my_string = ' '.join(str(e) for e in my_lst)
+my_string = ', '.join(str(e) for e in my_lst)
 f = open('prime.txt', 'w')
 f.write(my_string)
 f.close()
