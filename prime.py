@@ -1,17 +1,19 @@
-
 from math import sqrt
 import numpy as np
-N = 10**7
+N = 10000000
 arr=np.arange(N)
-file = open('prime.txt','w')
-lst=[]
-for i in range(2, N+1):
+lst=[2]
+for i in range(3, N+1, 2):
+    if (i > 10) and (i%10 == 5):
+        continue
     for j in lst:
         if j > int((sqrt(i)) + 1):
             lst.append(i)
-        if i % j == 0:
+            break
+        if (i % j == 0):
             break
     else:
         lst.append(arr[i])
-        file.write(str(arr[i])+' ')
+with open("prime.txt", "w") as file:
+    print(*lst, file=file)        
 file.close()
