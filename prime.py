@@ -21,6 +21,7 @@ def main(N):
     while (n <= N):
         if simple_num(n, list):
             file.write(str(n) +'\n')
+            print(n)
             list = np.append(list,[n])
         n += 1
     file.close()
